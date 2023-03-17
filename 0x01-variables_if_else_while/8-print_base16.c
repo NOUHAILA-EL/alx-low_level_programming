@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - entry point
  *
@@ -8,12 +7,20 @@
 
 int main(void)
 {
-	char n = 'z';
+	int n = 0;
+	int c;
 
-	while (n >= 'a')
+	while (n <= 9)
 	{
-		putchar(n);
-		n--;
+		c = n + 48;
+		putchar(c);
+		n++;
+	}
+	while (n >= 9 && n < 16)
+	{
+		c = n + 87;
+		putchar(c);
+		n++;
 	}
 	putchar('\n');
 
