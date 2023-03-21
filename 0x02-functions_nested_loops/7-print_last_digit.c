@@ -1,22 +1,25 @@
 #include "main.h"
 
 /**
-* _abs - return absolute value
+* print_last_digit - print the last digit
 *
-* @i: int checked
+* @n: Number used to find the last digit
 *
-*Return: the absolute Value
-*
+* Return: last digit
 */
-
-int _abs(int i)
+int print_last_digit(int n)
 {
-	if (i >= 0)
+	int l;
+
+	l = n % 10;
+	if (l < 0)
 	{
-		return (i);
+		_putchar(-l + 48);
+		return (-l);
 	}
 	else
 	{
-		return (i * -1);
+		_putchar(l + 48);
+		return (l);
 	}
 }

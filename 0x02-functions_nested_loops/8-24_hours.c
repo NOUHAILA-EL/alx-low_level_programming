@@ -1,25 +1,23 @@
 #include "main.h"
-
 /**
-* print_last_digit - print the last digit
-*
-* @n: Number used to find the last digit
-*
-* Return: last digit
-*/
-int print_last_digit(int n)
-{
-	int l;
+ * jack_bauer - main
+ * Return: rien
+ */
 
-	l = n % 10;
-	if (l < 0)
+void jack_bauer(void)
+{
+	int h, m;
+
+	for (h = 0; h < 24; h++)
 	{
-		_putchar(-l + 48);
-		return (-l);
-	}
-	else
-	{
-		_putchar(l + 48);
-		return (l);
+		for (m = 0; m < 60; m++)
+		{
+			_putchar((h / 10) + '0');
+			_putchar((h % 10) + '0');
+			_putchar(':');
+			_putchar((m / 10) + '0');
+			_putchar((m % 10) + '0');
+			_putchar('\n');
+		}
 	}
 }
