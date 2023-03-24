@@ -2,30 +2,29 @@
 /**
  * main - entry point
  *
- * Return: 0 (success)
+ * Description: prints FizzBuzz
+ *
+ * Return: void
  */
-
 int main(void)
 {
-	int n = 0;
-	int c;
+	int n;
 
-	while (n <= 9)
+	for (n = 1; n <= 100; n++)
 	{
-		c = n + '0';
-		putchar(c);
-		if (n < 9)
-		{
-			putchar(',');
-			putchar(' ');
-			n++;
-		}
+		if ((n % 3 == 0) && (n % 5 == 0))
+			printf("FizzBuzz");
+		else if (n % 5 == 0)
+			printf("Buzz");
+		else if (n % 3 == 0)
+			printf("Fizz");
 		else
-		{
-			n++;
-		}
-	}
-	putchar('\n');
+			printf("%i", n);
 
+		if (n < 100)
+			printf(" ");
+		else
+			printf("\n");
+	}
 	return (0);
 }
