@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * _pow_recursion - function
- * @x: variable
- * @y: variable 
+ * _pow_recursion - function returns the value of x raised to the pow of y
+ * @x: initial value
+ * @y: variable power
  *
- * Return: x*pow
+ * Return: result of pow recursion
  */
 int _pow_recursion(int x, int y)
 {
