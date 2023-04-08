@@ -6,7 +6,7 @@
  * @argc: number
  * @argv: array
  *
- * Return: 0 
+ * Return: return 0 
  */
 int main(int argc __attribute__((unused)), char *argv[])
 {
